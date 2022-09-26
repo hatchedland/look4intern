@@ -10,8 +10,9 @@ import Login from './Pages/Auth/Login';
 // post login tabs
 import Home from './Pages/Home/Home';
 import Profile from './Pages/Profile/Profile';
-import Saved from './Pages/Saved/Saved';
+// import Saved from './Pages/Saved/Saved';
 import Browse from './Pages/Browse/Browse';
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 
 export default function RouteSwitch({ component: Component, ...rest }) {
@@ -24,8 +25,9 @@ export default function RouteSwitch({ component: Component, ...rest }) {
             <Route exact path='/login' element={<Login />}></Route>
             <Route exact path='/signup' element={<Signup />}></Route>
             <Route exact path='/profile' element={< Profile />}></Route>
-            <Route exact path='/saved' element={< Saved />}></Route>
+            {/* <Route exact path='/saved' element={< Saved />}></Route> */}
             <Route exact path='/browse' element={< Browse />}></Route>
+            <Route exact path='/dashboard' element={<Dashboard />}></Route>
         </Routes>
     )
 }

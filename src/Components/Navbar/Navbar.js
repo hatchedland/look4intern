@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
+import Signout from './Signout';
 
 const Navbar = () => {
 
@@ -38,15 +39,17 @@ const Navbar = () => {
               <NavLink className="px-5 py-2 flex items-center leading-snug text-white hover:opacity-75" activeClassName="is-active" to="/" exact>Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="px-5 py-2 flex items-center leading-snug text-white hover:opacity-75" activeClassName="is-active" to="/saved" >Saved</NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink className="px-5 py-2 flex items-center leading-snug text-white hover:opacity-75" activeClassName="is-active" to="/browse" >Browse</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="px-5 py-2 flex items-center leading-snug text-white hover:opacity-75" activeClassName="is-active" to="/profile" exact>Profile</NavLink>
-              <button onClick={handleSignOut}>Sign out</button>
+              <NavLink className="px-5 py-2 flex items-center leading-snug text-white hover:opacity-75" activeClassName="is-active" to="/dashboard" >Dashboard</NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="px-5 py-2 flex items-center leading-snug text-white hover:opacity-75" activeClassName="is-active" to="/profile" exact>Profile</NavLink>
+            </li>
+            <li className="nav-item">
+              <Signout />
+              </li>
           </ul>
         </div>
       </div>
