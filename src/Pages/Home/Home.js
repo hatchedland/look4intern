@@ -1,6 +1,7 @@
 import React from 'react'
 import FAQ from './FAQ'
 import { Link } from 'react-router-dom'
+import DomainList from '../../Components/Category/DomainList'
 
 const Home = () => {
   return (
@@ -15,10 +16,7 @@ const Home = () => {
           <button type='submit' className='bg-blue-600 px-6 text-gray-200'>Search</button>
         </form>
         <ul className='flex gap-3 justify-center pt-5 text-xl flex-wrap'>
-          <li className='font-bold'>Popular Domains - </li>
-          <li><Link to={'/browse'}>AI/ML</Link></li>
-          <li><Link to={'/browse'}>React Developer</Link></li>
-          <li><Link to={'/browse'}>Content Writer</Link></li>
+          {/* <li className='font-bold'>Popular Domains - </li><Link to={'/browse'}><DomainList /></Link> */}
         </ul>
       </header>
       <FAQ />

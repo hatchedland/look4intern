@@ -1,8 +1,11 @@
 import React from 'react'
+import Filter from './Filter'
 
 const Browse = () => {
   return (
-    <div>Browse</div>
+    <div>
+      Browse
+    </div>
   )
 }
 

@@ -28,6 +28,7 @@ export default function RouteSwitch({ component: Component, ...rest }) {
             {/* <Route exact path='/saved' element={< Saved />}></Route> */}
             <Route exact path='/browse' element={< Browse />}></Route>
             <Route exact path='/dashboard' element={<Dashboard />}></Route>
+            {/* <Route path='browse/:category'><FilteredList /></Route> */}
         </Routes>
     )
 }
