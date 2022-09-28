@@ -1,0 +1,18 @@
+{
+    "user_details": {
+        "avatar": "https://miro.medium.com/fit/c/176/176/1*H39W4X8OkY62VMZcfh3Rog.png",
+        "name": "Rajan Yadav",
+        "email": "mail.rajanydv@gmail.com",
+        "branch": "Electronics & Telecommunications",
+        "year": "T.E.",
+        "domain": [
+            "content writing",
+            "web development"
+        ],
+        "skills": [
+            "react",
+            "javascript",
+            "leadership"
+        ]
+    }
+}
